@@ -1,0 +1,49 @@
+document-structuring-tool/
+|
+| backend/
+|  | app/
+|  |  | __init__.py             # Initialize app package
+|  |  | main.py                 # Flask app entry point
+|  |  | routes.py               # API routes for document upload and processing
+|  |  | services/               
+|  |  |  | __init__.py
+|  |  |  | extract_text.py      # Text extraction logic
+|  |  |  | detect_sections.py   # Section detection logic
+|  |  |  | summarize.py         # Summarization logic
+|  |  |  | utils.py             # Helper functions for text processing
+|  |  |
+|  |  | models/
+|  |  |  | __init.py__
+|  |  |  | summarizer.py        # < LLM MODEL> for summarization 
+|  | 
+|  | tests/                     # Unit and integration tests
+|  |  | test_extract.py
+|  |  | test_detect_section.py
+|  |  | test_summarize.py
+|  |
+|  | requirements.txt           # Python dependencies
+|
+| frontend/
+|  | public/                    # Static files for interface
+|  | src/                       
+|  |  | components/             # UI compontents
+|  |  | services/               # API calls to the backend
+|  |  | App.js                  # Main React app
+|  |  | index.js                # Entry point for React app
+|  |
+|  | package.json               # Frontend dependencies
+|
+| data/                         # Folder for storing sample documents
+|  | example.pdf                
+|  | example.doc
+|
+| logs/                         # Log files for monitoring activity/errors
+| scripts/                      # Helper scripts
+|  | sample_script.py
+|
+| README.md                     # Product documentation
+| .gitignore                    # Files and directories to ignore
+| LICENSE                       # LICENSE file
+
+
+
