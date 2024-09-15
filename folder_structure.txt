@@ -24,13 +24,18 @@ document-structuring-tool/
 |  | requirements.txt           # Python dependencies
 |
 | frontend/
+|  | node_modules/
 |  | public/                    # Static files for interface
+|  |  | index.html
 |  | src/                       
 |  |  | components/             # UI compontents
+|  |  |  | UploadComponents.js
 |  |  | services/               # API calls to the backend
+|  |  |  | api.js
 |  |  | App.js                  # Main React app
 |  |  | index.js                # Entry point for React app
 |  |
+|  | package-lock.json
 |  | package.json               # Frontend dependencies
 |
 | data/                         # Folder for storing sample documents
