@@ -22,7 +22,7 @@ const UploadComponent = () => {
 
     return (
         <div>
-            <h2>upload Document</h2>
+            <h2>Upload Document</h2>
             <form onSubmit={handleSubmit}>
                 <input type='file' onChange={handleFileChange} />
                 <button type='submit'>Upload</button>
