@@ -7,7 +7,7 @@ upload_routes = Blueprint('upload_routes',__name__)
 
 
 # Set allowed file extensions and upload folder
-UPLOAD_FOLDER = 'data/'
+UPLOAD_FOLDER = os.path.join(os.path.dirname(__file__),'../../data/')
 ALLOWED_EXTENSIONS = {'pdf','docx','txt'}
 
 def allowed_file(filename):
